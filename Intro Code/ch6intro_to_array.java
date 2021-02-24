@@ -24,6 +24,38 @@ public static void main (String[] args)
 /**/
 		mathy useful = new mathy();
 		int x = 50;
+		
+		int [] values; //define my array
+		//numbers and values are allias
+		values = useful.poprandomArray(MAX, 10);
+		//int values1 []
+		
+		/*
+		 * use an enhanced for loop to print ALL items in the array 
+		 * do not use i!!! this deotes an index
+		 * s is a copy of the value in the array
+		 * s = values[0], s = values[1] . . . . [n]
+		 * advantage: will not give an out of bound error
+		 * limitations cannot cange the int value in the array value
+		 */
+		//int count = 0;
+		for(int s: values){
+		   System.out.println(s); 
+		   s = 0;
+		   //values[count] = 0;
+		   //count++;
+		  }
+		System.out.println(values[5]+"-----");
+		
+		
+		//passing by value and reference
+		foo(values[0]);
+		System.out.println(values[0]+"VVV");
+		//passing the in[]
+		foo(values);
+		System.out.println(value[0]+"RRR");
+	
+		System.out.println(countodds+"VVV");
 /*
 
 		System.out.println(Searches.linearSearch(num,look)  );
@@ -136,7 +168,7 @@ public static void main (String[] args)
 	/*
 
 
-   public static void odd()
+   public static int countodds()
    {
 
 	   int count =0;
