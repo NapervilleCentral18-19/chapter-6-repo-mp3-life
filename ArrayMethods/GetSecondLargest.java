@@ -5,8 +5,15 @@ public class GetSecondLargest
    public int getSecondLargest(int[] arr)
    {
       // One way to do it: Find maximum once.
-      int max = arr[0];
-
+      int largest = 0;
+      int secLargest = 0;
+      
+      for (int i = 0; 1 < arr.length; i++){
+         if (arr[i] > largest){
+             largest= arr[i];
+            }
+         if
+        }
       // 2. Find the max again, ignoring the real max.
       int oldMax = max;
       max = arr[0];

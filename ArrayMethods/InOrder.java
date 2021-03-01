@@ -3,8 +3,13 @@ public class InOrder
    public boolean inOrder(int[] arr)
    {
       // Assume they are in order.
-      boolean ordered = true;
-
+      for (int i= 0; 1 < arr.length -1; i++){
+              if (arr[i] <= arr[i+1]){
+                 ordered = false;
+                }
+        }
+      
+      return ordered;
    }
 
    public static void main(String[] args)
@@ -12,7 +17,7 @@ public class InOrder
       int[] arrOrder = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 42 };
       int[] arrNotOrder = { 2, 1, 3, 4, 5, 6, 7, 8, 9, 42 };
       InOrder util = new InOrder();
-
+      
       // Check if array 1 is ordered or not.
       if (util.inOrder(arrOrder))
       {
