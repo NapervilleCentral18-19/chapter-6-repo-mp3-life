@@ -5,7 +5,11 @@ public class RotateRight
 	//[1,4,2,5,8,7] rotatesRight to --> [7,1,4,2,5,8]
    public void rotateRight(int[] arr)
    {
-
+       for (int i=0 ; i< arr.length ; i++){
+           arr= arr[arr.length+1];
+           int back = arr[i];
+        }
+       
    }
 
    public static void main(String[] args)

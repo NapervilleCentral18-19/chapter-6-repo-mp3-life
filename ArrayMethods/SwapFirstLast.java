@@ -4,6 +4,11 @@ public class SwapFirstLast
 {
    public void swapFirstLast(int[] arr)
    {
+       int  last = arr.length-1;
+
+       int temp = arr[0];
+       arr[0] = arr[last];
+       arr[last] = temp;
 
    }
 
@@ -19,7 +24,7 @@ public class SwapFirstLast
          randoms[i] = generator.nextInt(100) + 1;
          // Print the values as they are assigned.
          System.out.print(randoms[i] + " ");
-      }
+      } 
       System.out.println();
 
       // Perform the swap.

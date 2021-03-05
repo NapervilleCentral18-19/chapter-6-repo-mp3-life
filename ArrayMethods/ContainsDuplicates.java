@@ -7,10 +7,10 @@ public class ContainsDuplicates
       int num= 0, changer=0, counter=0;
       for(int i=0; i<arr.length-1 ; i++)
       {
-         for(int j=0; j<arr.length-1; 
+         for(int j=0; j<arr.length-1;j++); 
           num = arr[0+counter];
          counter++;
-         if 
+         
         }
       return dupes;
    }
