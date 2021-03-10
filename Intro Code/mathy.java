@@ -146,16 +146,14 @@ public class mathy
 
     public static int sum2DArray(int [][] scores)
     {
-
+        int total =0;
 
 
         for ( int row=0; row < scores.length; row++)
         {
             for ( int col=0; col < scores[row].length; col++)
 
-                System.out.print (scores[row][col] + "\t");
-
-            System.out.println();
+                total += scores[row][col];
         }
 
 
@@ -167,7 +165,12 @@ public class mathy
 
     public int sumOneRow2DArray(int row)
     {   int total = 0;
-
+        for (int col =0 ; col<square[row].length;col++)
+        {
+            
+            
+        }
+        
 
 
 

@@ -21,7 +21,7 @@ public class ch6intro_to_array
 public static void main (String[] args)
 {
 
-/**/
+
 		mathy useful = new mathy();
 		int x = 50;
 		
@@ -85,15 +85,15 @@ public static void main (String[] args)
 
 		System.out.println(Searches. binarySearch(num,find));
 
-   /*
+   
+
+*/
 
 
 
 
 
-
-
- /*
+ 
  	   //make a two dementional array
  	   int [][] table = new int [5][10];
 
@@ -114,7 +114,7 @@ public static void main (String[] args)
 
 	// make a 2d array with an iniitalizer list.
 	//print the length of row and col
-/*
+
 	int [][] scores = { {1,2,3},//6
 						{2,2,3},//7
 						{3,2,3},//8
@@ -129,7 +129,7 @@ public static void main (String[] args)
 	System.out.print("The sum of this array is" );
 
 	//sum a row of 2D array
-	System.out.print("The sum of row "));
+	System.out.print("The sum of row ");
 
 
 
@@ -137,7 +137,7 @@ public static void main (String[] args)
 
 
 
-/**/
+
 }// end of main
 
    public static int[] doubleSize(int[] array)
