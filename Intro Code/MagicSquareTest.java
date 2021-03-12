@@ -4,7 +4,8 @@
 
 import
 //******************************************************************* */
-
+//Mike Parker 
+// Useful = util (in this code)
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
