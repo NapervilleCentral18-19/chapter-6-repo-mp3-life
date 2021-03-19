@@ -1,9 +1,9 @@
 #BlueJ package file
-dependency1.from=Addressdata
-dependency1.to=Address
+dependency1.from=ch6intro_to_array
+dependency1.to=mathy
 dependency1.type=UsesDependency
-dependency2.from=ch6intro_to_array
-dependency2.to=mathy
+dependency2.from=Addressdata
+dependency2.to=Address
 dependency2.type=UsesDependency
 editor.fx.0.height=1416
 editor.fx.0.width=2576
@@ -15,8 +15,8 @@ package.divider.horizontal=0.6
 package.divider.vertical=0.8
 package.editor.height=393
 package.editor.width=657
-package.editor.x=434
-package.editor.y=0
+package.editor.x=432
+package.editor.y=59
 package.frame.height=600
 package.frame.width=800
 package.numDependencies=2

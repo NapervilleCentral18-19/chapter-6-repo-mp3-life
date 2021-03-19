@@ -11,7 +11,6 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import javax.swing.*;
 import java.util.*;
-
 public class MagicSquare
 
 {       //final static int MAX = 15;
@@ -33,9 +32,9 @@ public class MagicSquare
    {
          int truth = 0;
          boolean magicsquare = true;
-         for (int row = 1; row < array.length-1 && magicsquare ==true;row++)
+         for (int row = 1; magicsquare == true;row++)
          {
-             for (int col = 0; col < array[row].length-1; col++){
+             for (int col = 0; col == row; col++){
                  truth += array [row] [col];
                  
                  
@@ -43,6 +42,8 @@ public class MagicSquare
                 }
              if (truth != MagicNum)
                 magicsquare = false;
+             
+             
              truth = 0;
              
              
@@ -56,14 +57,14 @@ public class MagicSquare
        
        return MagicNum;
         }
-      /*
+      
       public int setMagicSquare(int[] [] array)
    {
-       MagicSquare util= new MagicSquare();
+       return this.MagicNum = MagicNum;
        
        
-    }
-        */
+     }
+        
 
       public static void main (String[] args)
    {
@@ -82,38 +83,24 @@ public class MagicSquare
                              {7,2,6},
                              {3,4,8}  };
     
-        // Do you belive in magic?
-        int [][] square3 = {{11,24, 7,20, 3},
-                            { 4,12,25, 8,16},
-                            {17, 5,13,21, 9},
-                            {10,18, 1,14,22},
-                            {23, 6,19, 2,15}  };
+
     
         MagicSquare util= new MagicSquare(square1);
-        //util.setMagicSquare(square1);
+        util.setMagicSquare(square1);
         
-        if (util.isMagic())
+        if (util.isMagic() == false)
             System.out.println("It's MAGIC!! With a sum of "+ util.getMagicNum());
         else
-            System.out.println("Hello muggle(not a magic square)!");
+            System.out.println("Hello muggle1");
     
         //change the 2D array and retest
-        //util.setMagicSquare(square2);
-        /*
-        if (util.isMagic())
-                System.out.println("It's MAGIC!! With a sum of "+ util.getMagicNum());
-            else
-            System.out.println("Hello muggle");
-    
-        //change the 2D array and retest
-        //util.setMagicSquare(square3);
-
-        if (util.isMagic())
-                System.out.println("It's MAGIC!! With a sum of "+ util.getMagicNum());
-            else
-        System.out.println("Hello muggle");
-        */
+        util.setMagicSquare(square2);
         
+        if (util.isMagic()==true)
+                System.out.println("It's MAGIC!! With a sum of "+ util.getMagicNum());
+            else
+            System.out.println("Hello muggle2");
+    
 
 
 
