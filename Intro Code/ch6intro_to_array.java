@@ -21,7 +21,7 @@ public class ch6intro_to_array
 public static void main (String[] args)
 {
 
-
+/*
         mathy useful = new mathy();
         int x = 50;
         
@@ -91,8 +91,7 @@ public static void main (String[] args)
 
 
 
-
-
+/*
  
        //make a two dementional array
        int [][] table = new int [5][10];
@@ -132,7 +131,7 @@ public static void main (String[] args)
     System.out.print("The sum of row ");
 
 
-
+*/
 
 
 
